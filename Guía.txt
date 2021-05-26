@@ -1,0 +1,46 @@
+0. Preparación del proyecto
+	0.1 Preparación de repositorio en github
+	0.2 Preparación de calendario del proyecto
+Generalidades	
+	1. Regresión 
+	2. Enmascarar datos finales
+Tareas
+3. Estructura
+	3.1 Preparación de datos
+	3.2 Transformación de datos
+	3.3 Analisis descriptivo
+	3.4 Transformación de datos segun el modelo (Revisar si es necesario)
+	3.5 Modelos de regresión
+		3.5.1 Selección backward o forward de variables
+		4.5.2 Modelo de regresión por cross validation
+		3.5.3 Implementar grid search si es posible para la busqueda de parametros
+		3.5.4 Metricas de generalización del modelo
+	3.6 Presentación de resultados (¿Que se presentara?¿graficas?¿de que tipo?
+	3.7 Interfaz (Consultar si se debe tener
+4. Sprint 1 (Sabado 8, 2 PM)
+	4.1 Definición de analisis descriptivo (¿Que se hara?)
+	4.2 Definición de tratamientos de datos ¿Que se hara limpieza o tratamientos de datos se haran?
+	4.3 Definicion de transformación de datos ¿Que transformaciones se haran?
+4. Sprint 2 (Lunes 17)
+	4.1 Revisión script inicial
+	4.2 Asignación de tareas relacionadas al modelo
+
+1. Descripcion(automatico)
+	Se revisan los datos, el tipo de datos, que limpieza se debe hacer y que variables NO van para la selección de variables
+	
+	Graficos: Hsitogramas, matriz de correlaciones
+	
+Limpieza(manual) -> Dataframe CON ESTRUCTURA REQUERIDA
+
+A REVISAR: Mostrar algunos graficos luego de la limpieza dado que al graficarlos sin limpiar no arroja graficos muy dicientes. (Box plot, pairplot)
+
+2. Transformación de datos(Automatico)
+	No hacer la limpieza
+	
+	
+3. Modelos(Automatico)
+Target: Tiempo (Cuanto tiempo estuvo ocupado la celda en el día. Con el tiempo estimado se calcula el valor recaudado en el día)
+Target: Estado (Probabilidad de pago por el parqueo en el día de la semana)
+Target: Franja de inicio (Esta es tentativa. Realizar si hay tiempo)
+
+4. Salidas(Automatico)

@@ -1,0 +1,31 @@
+
+
+import numpy as np
+from sklearn import linear_model
+from sklearn.metrics import mean_squared_error
+
+x= df[
+  ["MES"
+  ]
+]
+
+Lambda_opt=None
+mse_opt=None
+
+for Lambda in np.linspace(0.0, 1.0, 100):
+    y_escalado = boxcox(df.DIASEM,Lambda)
+    regr = linear_model.LinearRegression()
+    regr.fit(x, y)
+    y_escalado_pred = regr.predict(x) 
+    y_pred = boxcox_inv(y_escalado_pred, Lambda)
+
+    mse = mean_squared_error(df.DIASEM, y_pred)
+
+    if mse_opt is None or mse< mse_opt:
+        mse_opt= mse
+        Lambda_opt= Lambda  
+      ##print(mse, Lambda)
+	  
+	  
+	  
+Lambda_opt
